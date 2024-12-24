@@ -21,6 +21,7 @@
                 <Header />
                 <div className="content">
                     {isFetched && <CharacterInfo data={character} />}
+                    {/*isLocationFetched && <Locations data={location}/>*/}
                 </div>
             </>
         )
