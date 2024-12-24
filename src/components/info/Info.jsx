@@ -17,7 +17,7 @@ export const CharacterInfo = ({data}) => {
                 </div>
                 <div className={styles.textWrap}>
                     <span className={styles.title}>Fist seen in:</span>
-                    <p className={styles.text}>{data.episode[0].split('/').pop()}</p>
+                    <p className={styles.text}>{data.location.name}</p>
                 </div>
             </div>
         </div>
