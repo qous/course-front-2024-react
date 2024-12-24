@@ -10,9 +10,8 @@
         const { data: character, isFetched } = useCharacter(characterId)
 
         
-        const locationUrl = character?.location?.url
-        const locationId = locationUrl ? locationUrl.split('/').pop() : null
-        const { data: location, isLocationFetched } = useLocation(locationId)
+        const locationUrl = character?.location?.url.split('/').pop()
+        const { data: location, isLocationFetched } = useLocation(locationUrl)
 
         console.log(location)
 
@@ -20,7 +19,7 @@
             <>
                 <Header />
                 <div className="content">
-                    {isFetched && <CharacterInfo data={character} />}
+                    {isFetched && <CharacterInfo data={character} location={location} />}
                     {/*isLocationFetched && <Locations data={location}/>*/}
                 </div>
             </>

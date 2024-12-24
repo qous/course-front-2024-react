@@ -1,6 +1,6 @@
 import styles from "./Info.module.scss"
 
-export const CharacterInfo = ({data}) => {
+export const CharacterInfo = ({data, location}) => {
     return (
         <div className={styles.character}>
             <img className={styles.image} src={data.image} alt=""/>
@@ -17,7 +17,7 @@ export const CharacterInfo = ({data}) => {
                 </div>
                 <div className={styles.textWrap}>
                     <span className={styles.title}>Fist seen in:</span>
-                    <p className={styles.text}>{data.location.name}</p>
+                    <p className={styles.text}>{location?.name}</p>
                 </div>
             </div>
         </div>

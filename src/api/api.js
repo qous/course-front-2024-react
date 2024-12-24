@@ -12,6 +12,6 @@ export const characters = {
         return instance.get('/character/' + id)
     },
     getLocation(locationUrl) {
-        return instance.get('/location/' + locationUrl)
+        return instance.get('/episode/' + locationUrl)
     }
 }
