@@ -6,6 +6,13 @@
     padding: 90px 7vw 0 7vw;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 52.25px 7vw 0 7vw;
+}
+
 @media (max-width: 768px) {
     .wrapper {
         grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));

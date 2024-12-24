@@ -10,5 +10,8 @@ export const characters = {
     },
     getCharacterById(id) {
         return instance.get('/character/' + id)
+    },
+    getLocation(locationUrl) {
+        return instance.get('/location/' + locationUrl)
     }
 }

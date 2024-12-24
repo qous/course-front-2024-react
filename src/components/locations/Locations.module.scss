@@ -1,0 +1,28 @@
+.location {
+    margin-top: 52.25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameLocation {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.typeLocation {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4)
+}
